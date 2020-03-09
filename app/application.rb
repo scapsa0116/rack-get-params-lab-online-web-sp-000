@@ -27,16 +27,16 @@ class Application
      
       
       
-     if req.path.match(/add/)
-			item = req.params["item"]
+  #   if req.path.match(/add/)
+		# 	item = req.params["item"]
 	 
-			if 	@@items.include?(item)
-				@@cart << item
-				resp.write "added #{item}"
-			else
-				resp.write "We don't have that item"
-			end
-		end 
+		# 	if 	@@items.include?(item)
+		# 		@@cart << item
+		# 		resp.write "added #{item}"
+		# 	else
+		# 		resp.write "We don't have that item"
+		# 	end
+		# end 
 		
  
  
