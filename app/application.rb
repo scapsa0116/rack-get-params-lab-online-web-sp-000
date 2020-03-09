@@ -34,7 +34,7 @@ class Application
       elsif
         resp.write "We don't have that item"
     end 
-     elsif
+   else 
       resp.write "Path Not Found"
     end
   
