@@ -26,7 +26,7 @@ class Application
       end 
       
       
-     if req.path.match(/add/)
+     elsif req.path.match(/add/)
 			item = req.params["item"]
 			end 
 			if 	@@items.include?(item)
