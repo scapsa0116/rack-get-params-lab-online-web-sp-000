@@ -23,6 +23,7 @@ class Application
         @@cart.each do |cart_item|
           resp.write "#{cart_item}\n"
         end
+         resp.finish
       end 
      
       
