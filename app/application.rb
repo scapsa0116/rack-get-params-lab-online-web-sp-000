@@ -23,7 +23,7 @@ class Application
         @@cart.each do |cart_item|
           resp.write "#{cart_item}\n"
         end
-      end 
+     
       
       
      elsif req.path.match(/add/)
@@ -35,7 +35,7 @@ class Application
 			else
 				resp.write "We don't have that item"
 			end
- end 
+ 
  
  
  
