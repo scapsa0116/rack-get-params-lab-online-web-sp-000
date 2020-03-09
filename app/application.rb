@@ -24,9 +24,10 @@ class Application
         @@cart.each do |cart_item|
           resp.write "#{cart_item}\n"
         end
+      end 
          resp.finish
       end 
-     end 
+    
       
       
   #   if req.path.match(/add/)
