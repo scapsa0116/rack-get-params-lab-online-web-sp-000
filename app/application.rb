@@ -4,7 +4,7 @@ class Application
   @@cart = []
   def call(env)
     resp = Rack::Response.new
-    req = Rack::Request.new(env)
+    # req = Rack::Request.new(env)
 
     if req.path.match(/items/)
       @@items.each do |item|
