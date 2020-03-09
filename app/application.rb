@@ -48,5 +48,4 @@ class Application
     end
   end
 end 
-end 
 
