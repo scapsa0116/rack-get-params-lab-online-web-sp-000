@@ -23,6 +23,7 @@ class Application
         @@cart.each do |cart_item|
           resp.write "#{cart_item}\n"
         end
+      end 
      
       
       
@@ -35,7 +36,7 @@ class Application
 			else
 				resp.write "We don't have that item"
 			end
-			end 
+		
  
  
  
