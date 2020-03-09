@@ -36,7 +36,7 @@ class Application
 			else
 				resp.write "We don't have that item"
 			end
-			end 
+		end 
 		
  
  
@@ -49,4 +49,5 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
+end 
 
