@@ -23,12 +23,8 @@ class Application
         @@cart.each do |cart_item|
           resp.write "#{cart_item}\n"
         end
-       
       end 
-      
-        
-
-    resp.finish
+     resp.finish
   end
 
   def handle_search(search_term)
@@ -37,6 +33,13 @@ class Application
     else
       return "Couldn't find #{search_term}"
     end
+     if @@items.include?(item)
+        @@cart << item
+        resp.write "added #{item}"
+      else
+        resp.write "We don't have that item"
+      end
+        
   end
   
   
