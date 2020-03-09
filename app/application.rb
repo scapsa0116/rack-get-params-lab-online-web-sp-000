@@ -44,13 +44,5 @@ class Application
     else
       return "Couldn't find #{search_term}"
     end
-     if @@items.include?(item)
-        @@cart << item
-        resp.write "added #{item}"
-      else
-        resp.write "We don't have that item"
-      end
-      
-     
   end
 end
